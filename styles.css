@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+/* Главный фон*/
+.background {
+    background: url('bg1_brain.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+/* Секция контейнер*/
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #ff4f4;
+    min-height: 40vh; /* Минимальная высота секций для полноэкранного отображения */
+}
+/* Фон контейнера*/
+.section:nth-child(even) {
+    background: #ffffff;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+/* Всплывающая информация о картинке*/
+#infoImage {
+    position: fixed; /* Фиксированное позиционирование */
+    width: 100px; /* Изменить размер изображения */
+    cursor: pointer;
+    bottom: 340px; /* Расположение изображения по вертикали */
+    left: 95%;
+    /*transform: translateX(-50%);*/
+}
+#infoImage1 {
+width: 100px; /* Изменить размер изображения */
+    cursor: pointer;}
+
+#infoImage2 {
+width: 100px; /* Изменить размер изображения */
+    cursor: pointer;}
+
+#infoImage3 {
+width: 100px; /* Изменить размер изображения */
+    cursor: pointer;}
+
+#infoImage4 {
+width: 100px; /* Изменить размер изображения  */
+    cursor: pointer;}
+
+#infoImage5 {
+width: 100px; /* Изменить размер изображения  */
+    cursor: pointer;}
+
+#infoImage6 {
+ width: 100px; /* Изменить размер изображения  */
+    cursor: pointer;}
+
+#infoImage7 {
+ width: 100px; /* Изменить размер изображения */
+    cursor: pointer;}
+
+#infoImage8 {
+ width: 100px; /* Изменить размер изображения */
+    cursor: pointer;}
+
+#infoImage9 {
+ width: 100px; /* Изменить размер изображения */
+    cursor: pointer;}
+
+#infoImage10 {
+ width: 100px; /* Изменить размер изображения */
+    cursor: pointer;}
+
+#infoImage11 {
+ width: 70px; /* Изменить размер изображения */
+    cursor: pointer;}
+
+.text-overlay {
+    position: fixed;
+    top: 195px;
+    left: 72%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1em;
+    z-index: 5; /*  текст выше фона, но ниже изображения */
+    font-family: Arial, sans-serif;
+    }
+.popup {
+    display: none; /* По умолчанию скрыто */
+    position: fixed;
+    bottom: 300px;
+    left: 75%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* всплывающее окно выше остальных элементов */
+}
+
+.popup p {
+    margin: 0;
+}
